@@ -1,0 +1,23 @@
+﻿<Window x:Class="Tarea_04_03.ejr2Window"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tarea_04_03"
+        mc:Ignorable="d"
+        Title="ejr2Window" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="txtWord" HorizontalAlignment="Left" Margin="90,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lb" Content="Palabra" HorizontalAlignment="Left" Margin="126,35,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnGenerar" Content="Generar" HorizontalAlignment="Left" Margin="505,53,0,0" VerticalAlignment="Top" Width="67" Height="37" Click="btnGenerar_Click"/>
+        <ListView x:Name="show" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="90,106,182,20">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button x:Name="btnReset" Content="Reset" HorizontalAlignment="Left" Margin="39,27,0,0" VerticalAlignment="Top" Click="btnReset_Click"/>
+
+    </Grid>
+</Window>

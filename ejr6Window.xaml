@@ -1,0 +1,26 @@
+﻿<Window x:Class="Tarea_04_03.ejr6Window"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tarea_04_03"
+        mc:Ignorable="d"
+        Title="ejr6Window" Height="450" Width="800">
+    <Grid>
+        <Label x:Name="lb" Content="El nombre mas adecuado seria funcion para hallar factores de un numero" HorizontalAlignment="Left" Margin="67,386,0,0" VerticalAlignment="Top"/>
+        <ListView x:Name="show" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="447,33,24,152">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button x:Name="btnMostrar" Content="Mostrar por pantalla" HorizontalAlignment="Left" Margin="339,304,0,0" VerticalAlignment="Top" Click="btnMostrar_Click"/>
+        <TextBox x:Name="txtNum" HorizontalAlignment="Left" Margin="332,86,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="111" Height="16"/>
+        <Label x:Name="lb1" Content="Numero x" HorizontalAlignment="Left" Margin="358,63,0,0" VerticalAlignment="Top" Height="23" Width="69"/>
+        <Image x:Name="img1" HorizontalAlignment="Left" Height="284" Margin="22,33,0,0" VerticalAlignment="Top" Width="284" Source="/ejr6.JPG"/>
+        <Image x:Name="img2" HorizontalAlignment="Left" Height="102" Margin="37,324,0,0" VerticalAlignment="Top" Width="739" Source="/ejr6.1.JPG"/>
+        <Button x:Name="btnReset" Content="Reset" HorizontalAlignment="Left" Margin="374,158,0,0" VerticalAlignment="Top" Click="btnReset_Click"/>
+
+    </Grid>
+</Window>
